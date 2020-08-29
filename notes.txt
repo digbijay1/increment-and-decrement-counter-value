@@ -1,0 +1,433 @@
+> https://code.visualstudio.com/
+> https://nodejs.org/en/
+> https://github.com/
+> https://github.com/Aakashdeveloper
+
+//Javascript
+
+
+//npm
+Node package Manager
+
+//xml yml json
+//package.json
+JSON => Javascript Object Notation
+[
+    {
+        name:"abc",
+        class:1,
+    },
+    {
+        name:"xyz",
+        class:1,
+    }
+]
+
+//package.json
+> First file to run
+> Contain description
+> Packages
+> Version
+> Start, test, build Script
+
+//setup of React
+
+//JSX
+
+/************************
+Step to create package.json
+************************/
+**must install nodejs
+> Open your cmd/Terminal
+> Navigate to the folder where you want to generate
+> type 'npm init'
+> Answer all question
+> type 'yes'
+
+/************************
+How to install packages
+************************/
+> Global => Local to the system
+(Create,Build,Test)
+
+> Local => Local to folder
+
+/******Local package******/
+> Open your cmd/Terminal
+> Navigate to the folder where you want to generate
+> npm i react/npm install react/npm i react --save -dev
+
+/******Gloabl package******/
+#Win
+> run your cmd as admin
+> npm i -g @aakashdeveloper/create-node-app
+
+#Mac
+> run your terminal
+> sudo npm i -g @aakashdeveloper/create-node-app
+
+**Global depedency will add to package.json
+**To install global admin permission
+
+
+/************************
+Step to create React App
+************************/
+Win
+> run your cmd as admin
+> npm i -g create-react-app
+> Open your cmd
+> Navigate to the folder where you want to generate
+> create-react-app <appname>
+> cd appname
+> npm Start
+> localhost:3000
+
+Mac/Linux
+
+> run your terminal
+> sudo npm i -g create-react-app
+> Open your cmd
+> Navigate to the folder where you want to generate
+> create-react-app <appname>
+> cd appname
+> npm Start
+> localhost:3000
+
+npx create-react-app appname
+
+
+
+//Generate react
+//Walk through of folder
+//component addiing css
+
+////Component in React App////
+Functional               | ClassBase
+---------------------------------------------------
+Dumb Component           | Logical Component
+Display Component        |
+light in weight          | Heavy as compare of functional
+Cannot maintain state    | Can maintain state
+normal function          | Class method
+
+
+
+STATE & Props
+
+State = Local variable in component
+        (any data declare or data interaction)
+Props = Use to transfer the data
+
+ComponentA            ====>         ComponentB
+State{                Props         State{}
+    title:'React'
+}
+
+->data is send from class component into functiuoinal component using props. 
+ClassComponentA       =====>      FunctionalComponentB
+>We will call API     Props       > Will recive props with data
+>Data of API we will              > Than we will display
+ save in state
+
+
+tagname
+class
+id
+
+// Filter, Map & .bind in Javascript
+// cssbootstrap
+
+
+
+
+
+//framework
+flux(not more used)
+redux(mostly used)
+relay(not mopre used)
+//
+map => is use to iterate or value
+filter => to filterr some specific value 
+
+var a = [0,1,2,0,3]
+a.map((data) => { return data*2})
+[0,2,4,0,6]
+
+a.filter((data) => { return data*2})
+[1,2,3]
+
+filter only those value for which condition is true
+
+true == 1
+false == 0
+
+npm i react-lazyload
+
+var = ["London","Newyork","delhi"]
+var city= ["London","Newyork","delhi"]
+undefined
+city.indexOf('London')
+0
+city.indexOf('delhi')
+2
+city.indexOf('Helsinki')
+-1
+city.indexOf('Boston')
+-1
+
+
+[0,1,1,2]
+3
+4
+
+
+?
+
+var a = 10
+a>10?"hi":"bie"
+
+
+if(a.length>0){
+
+}
+
+if(a){
+
+}
+
+
+parent=> child (Normal props)
+child => Parent(callback)
+
+
+add(showresult())
+
+
+add=(a,b)=>{return a+b}
+
+add(1,2)
+ 
+///*Routing*////
+npm i react-router-dom
+
+//////////
+mockapi or dummy api
+
+json-server
+
+npm i -g json-server
+
+json-server --watch db.json --port 8900
+
+
+Math.random()
+0.7472113037675367
+Math.random()*10000
+4012.0160270744186
+Math.random()*100000
+76818.99233728755
+Math.floor(Math.random()*100000)
+19020
+Math.floor(Math.random()*100000)
+80801
+Math.floor(Math.random()*100000)
+39760
+Math.floor(Math.random()*100000)
+43293
+Math.floor(Math.random()*100000)
+24383
+
+
+Math.floor(Math.random()*(max-min))+min
+
+Math.floor(Math.random()*(10-1))+1
+
+
+/*
+Will mount and did mount call only at the time of
+loading the component
+on every state change on render will get call
+*/
+
+Pure component
+
+/*git*/
+/*Redux*/
+
+code Versiong
+
+//First Time///
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/myapp.git
+git push -u origin master
+
+//All Other Times//
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b newfeature  branchname/master
+
+git clone -b branchname https://github.com/Aakashdeveloper/myapp.git
+
+git pull 
+
+
+/****************
+    Redux
+*******************
+redux react-redux
+
+comoponent=> Display(ClassBase/functional)
+container=> Talk to redux(class base)
+action => Api Calling
+Reducers => to manage state
+Store => To save state
+
+
+Reducer => Main Reducer (Combine all reducers)
+           Topic reducer
+
+           /product   (product reducer)
+           /movies     (movies reducer)
+
+
+mapStateToProps(this will recive the state)    <====
+mapDispatchToprops(this will dispatch action)  ====>
+
+
+get
+post
+patch
+
+put vs patch
+
+//Next redux app//
+//Hooks//
+
+npm i redux react-redux redux-promise react-slick
+
+
+function looping(userinput){
+    for(i=0;i<userinput;i++){
+       console.log(i)
+    }
+}
+
+
+function * looping(userinput){
+    for(i=0;i<userinput;i++){
+       yield i;
+    }
+}
+
+var data = looping(5)
+undefined
+data.next()
+{value: 0, done: false}
+data.next()
+{value: 1, done: false}
+data.next()
+{value: 2, done: false}
+data.next()
+{value: 3, done: false}
+data.next()
+{value: 4, done: false}
+data.next()
+{value: undefined, done: true}
+
+
+
+
+react
+redux
+saga
+reacthooks
+graphql
+deployment/test
+-------------
+react-native
+--------------
+login-logout
+
+https://www.youtube.com/channel/UC26NMdgQBbY6wunk_vZwQZQ/videos?view_as=subscriber
+
+
+npm i graphql apollo-boost react-apollo
+
+> inetpub  => iis
+> xamp     => www 
+> tomact    => /var/www
+
+
+docker build . -t edumarch
+docker image ls
+docker run -p 8006:3000 edumarch
+
+//Nginx
+> localhost:9800
+> https://abc.com
+
+In the nginx.conf
+
+server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	    root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
+
+server {
+    #    listen       443 ssl;
+    #    server_name  localhost;
+
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_cache    shared:SSL:1m;
+    #    ssl_session_timeout  5m;
+
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers  on;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+//////////////////////////////////////
+
+npm i enzyme enzyme-adapter-react-16 react-test-renderer
+
+
+/////////////////////////////////////
+npm i -g create-react-native-app
+create-react-native-app mobileappp
+
+
+>>>>
+/******GetUser*****/
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role":"admin"}
+
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
+localstorage
