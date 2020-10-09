@@ -12,8 +12,8 @@ const App = () => {
 	return (
 		<>
 			<h1> {count} </h1>
-			<button onClick={IncNum}> + Click To Increment</button>
-			<button onClick={Dec}> - Click To Decrement</button>
+			<button onClick={IncNum}> + Click To Increment Value</button>
+			<button onClick={Dec}> - Click To Decrement Value</button>
 		</>
 	);
 };
